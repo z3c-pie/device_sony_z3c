@@ -23,9 +23,6 @@ DEVICE_PATH := device/sony/z3c
 # Assert
 TARGET_OTA_ASSERT_DEVICE := z3c
 
-# HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-
 # Include path
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 
@@ -37,9 +34,6 @@ BOARD_VOLD_MAX_PARTITIONS := 25
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
-
-# SELinux
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Inherit from proprietary files
 include vendor/sony/z3c/BoardConfigVendor.mk

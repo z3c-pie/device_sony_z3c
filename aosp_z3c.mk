@@ -21,9 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/sony/z3c/z3c.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common.mk)
 
-PRODUCT_NAME := lineage_z3c
+PRODUCT_NAME := aosp_z3c
 PRODUCT_DEVICE := z3c
 PRODUCT_BRAND := Sony
 PRODUCT_MODEL := Xperia Z3 Compact
